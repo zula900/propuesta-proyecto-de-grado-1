@@ -37,7 +37,7 @@ Desarrollar una **aplicación web/móvil** que muestre información confiable de
 - **Backend:** Node.js (Express) o Python (FastAPI/Django)  
 - **Base de datos:** PostgreSQL (PostGIS) o Firebase  
 - **Tiempo real:** WebSockets (Socket.IO) o Firebase Realtime DB  
-- **CI/CD:** GitHub Actions (opcional)  
+- **Control de Versiones:** Git & GitHub   
 
 ---
 
