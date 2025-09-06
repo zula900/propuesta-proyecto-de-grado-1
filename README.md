@@ -39,15 +39,6 @@ Desarrollar una **aplicación web/móvil** que muestre información confiable de
 - **Tiempo real:** WebSockets (Socket.IO) o Firebase Realtime DB  
 - **Control de Versiones:** Git & GitHub   
 
----
-
-## 🧱 Módulos Principales
-1. **Rutas y Paradas** (CRUD)  
-2. **Ingesta de Datos GPS** (conector a APIs; normalización)  
-3. **Motor de ETA**  
-4. **API Pública** (REST/GraphQL)  
-5. **App Cliente** (mapa, ETA, favoritos, alertas)  
-6. **Admin Dashboard** (opcional)  
 
 ---
 
@@ -56,33 +47,3 @@ Desarrollar una **aplicación web/móvil** que muestre información confiable de
 - Reportes ciudadanos **opcionales** y anónimos.  
 - Cumplir Términos de Uso de mapas/APIs.  
 
----
-
-## ✅ Estado del Proyecto
-- [ ] Definición de requisitos  
-- [ ] Diseño de arquitectura  
-- [ ] Ingesta básica de datos GPS  
-- [ ] Cálculo ETA mínimo viable  
-- [ ] App cliente (mapa + ETA)  
-- [ ] Pruebas con usuarios  
-- [ ] Documentación  
-
----
-
-## 🗺️ Roadmap Sugerido (MVP → Beta)
-1. **MVP:** Mapa + ETA por parada con una sola ruta/operador.  
-2. **Beta:** Favoritos, alertas y mejoras de precisión.  
-3. **v1.0:** Multi-operador y panel admin.  
-
----
-
-## 🧪 Cómo ejecutar (ejemplo con Node.js)
-```bash
-# Backend
-npm install
-npm run dev
-
-# Frontend (React)
-cd web
-npm install
-npm start
