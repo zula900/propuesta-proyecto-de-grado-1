@@ -1,7 +1,7 @@
 # 📌 Propuesta Proyecto de Grado – App de Alertas de Transporte Público
 
 ## 👤 Autor
-- **Nombre:** Camilo García  
+- **Nombre:** Mateo hernandez diaz   
 - **Carrera:** Tecnología en Desarrollo de Software  
 - **Universidad:** Universidad Católica Luis Amigó  
 
