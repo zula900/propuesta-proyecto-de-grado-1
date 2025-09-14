@@ -45,5 +45,14 @@ Desarrollar una **aplicación web/móvil** que muestre información confiable de
 ## 🔒 Privacidad y Fuentes de Datos
 - Priorizar **datos oficiales** (APIs de empresas o datos abiertos).  
 - Reportes ciudadanos **opcionales** y anónimos.  
-- Cumplir Términos de Uso de mapas/APIs.  
+- Cumplir Términos de Uso de mapas/APIs.
+
+---
+
+## Diagrama de Flujo
+![Diagrama de Flujo](imagenes/bustracker_diagrama.png)
+
+## Diagrama de ishikawa
+![Diagrama de ishikawa](imagenes/Beig)
+
 
