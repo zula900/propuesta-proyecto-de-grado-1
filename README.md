@@ -71,6 +71,8 @@ Criterios de aceptación:
 
 -Se muestra mensaje de confirmación de registro exitoso.
 
+---
+
 2. Consulta de denuncias propias
 
 Como ciudadano registrado, quiero consultar el historial de mis denuncias, para poder dar seguimiento a su estado.
@@ -84,6 +86,8 @@ Criterios de aceptación:
 Debe existir opción de filtrar denuncias por estado o fecha.
 
 Acceso restringido solo al usuario propietario de la cuenta.
+
+---
 
 3. Visualización de mapa de incidentes
 
@@ -99,6 +103,8 @@ Opción de filtrar por tipo de incidente o fecha.
 
 El mapa se actualiza automáticamente con las nuevas denuncias.
 
+---
+
 4. Notificaciones sobre zonas de riesgo
 
 Como ciudadano, quiero recibir notificaciones sobre nuevas denuncias en mi zona habitual, para estar alerta en mis recorridos.
@@ -113,6 +119,8 @@ Notificación enviada por correo electrónico o dentro de la app.
 
 Opción para activar o desactivar notificaciones.
 
+---
+
 5. Panel de administración (autoridad)
 
 Como administrador, quiero acceder a un panel donde pueda visualizar todas las denuncias recibidas, para gestionar y darles respuesta.
@@ -126,6 +134,8 @@ Cada denuncia debe tener opciones de actualizar su estado (pendiente, en revisi�
 Acceso restringido a usuarios con rol de administrador.
 
 Los cambios en el estado de la denuncia se reflejan en el perfil del ciudadano denunciante.
+
+---
 
 6. Recuperación de contraseña
 
@@ -142,6 +152,8 @@ El sistema envía un enlace seguro de restablecimiento al correo registrado.
 El usuario puede definir una nueva contraseña cumpliendo las políticas de seguridad (mínimo 8 caracteres, letras y números).
 
 Mensaje de confirmación al finalizar el proceso.
+
+---
 
 7. Calificación de zonas seguras/inseguras
 
