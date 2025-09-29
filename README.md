@@ -63,13 +63,13 @@ Como ciudadano registrado, quiero registrar una denuncia sobre una situación de
 
 Criterios de aceptación:
 
--El formulario solicita ubicación, descripción del hecho y opción para adjuntar evidencia (foto/video).
+- El formulario solicita ubicación, descripción del hecho y opción para adjuntar evidencia (foto/video).
 
--Validación de que todos los campos obligatorios estén diligenciados.
+- Validación de que todos los campos obligatorios estén diligenciados.
 
--La denuncia se guarda en la base de datos con fecha y hora.
+- La denuncia se guarda en la base de datos con fecha y hora.
 
--Se muestra mensaje de confirmación de registro exitoso.
+- Se muestra mensaje de confirmación de registro exitoso.
 
 ---
 
@@ -79,13 +79,13 @@ Como ciudadano registrado, quiero consultar el historial de mis denuncias, para 
 
 Criterios de aceptación:
 
--El sistema muestra una lista de denuncias asociadas al usuario.
+- El sistema muestra una lista de denuncias asociadas al usuario.
 
--Cada denuncia debe mostrar fecha, descripción y estado (pendiente, en revisión, resuelta).
+- Cada denuncia debe mostrar fecha, descripción y estado (pendiente, en revisión, resuelta).
 
-Debe existir opción de filtrar denuncias por estado o fecha.
+- Debe existir opción de filtrar denuncias por estado o fecha.
 
-Acceso restringido solo al usuario propietario de la cuenta.
+- Acceso restringido solo al usuario propietario de la cuenta.
 
 ---
 
@@ -95,13 +95,13 @@ Como ciudadano, quiero visualizar en un mapa las zonas con más reportes de inse
 
 Criterios de aceptación:
 
-El mapa muestra marcadores en las ubicaciones reportadas.
+- El mapa muestra marcadores en las ubicaciones reportadas.
 
-Los marcadores se agrupan por zonas con alta concentración de incidentes.
+- Los marcadores se agrupan por zonas con alta concentración de incidentes.
 
-Opción de filtrar por tipo de incidente o fecha.
+- Opción de filtrar por tipo de incidente o fecha.
 
-El mapa se actualiza automáticamente con las nuevas denuncias.
+- El mapa se actualiza automáticamente con las nuevas denuncias.
 
 ---
 
@@ -111,13 +111,13 @@ Como ciudadano, quiero recibir notificaciones sobre nuevas denuncias en mi zona 
 
 Criterios de aceptación:
 
-El sistema permite al usuario registrar zonas de interés (ej. barrio, estación).
+- El sistema permite al usuario registrar zonas de interés (ej. barrio, estación).
 
-Notificación automática cuando se registre una denuncia en la zona configurada.
+- Notificación automática cuando se registre una denuncia en la zona configurada.
 
-Notificación enviada por correo electrónico o dentro de la app.
+- Notificación enviada por correo electrónico o dentro de la app.
 
-Opción para activar o desactivar notificaciones.
+- Opción para activar o desactivar notificaciones.
 
 ---
 
@@ -127,13 +127,13 @@ Como administrador, quiero acceder a un panel donde pueda visualizar todas las d
 
 Criterios de aceptación:
 
-El panel muestra lista de denuncias con opción de filtrado (fecha, zona, tipo de incidente).
+- El panel muestra lista de denuncias con opción de filtrado (fecha, zona, tipo de incidente).
 
-Cada denuncia debe tener opciones de actualizar su estado (pendiente, en revisión, resuelta).
+- Cada denuncia debe tener opciones de actualizar su estado (pendiente, en revisión, resuelta).
 
-Acceso restringido a usuarios con rol de administrador.
+- Acceso restringido a usuarios con rol de administrador.
 
-Los cambios en el estado de la denuncia se reflejan en el perfil del ciudadano denunciante.
+- Los cambios en el estado de la denuncia se reflejan en el perfil del ciudadano denunciante.
 
 ---
 
@@ -143,15 +143,15 @@ Como ciudadano registrado, quiero recuperar mi contraseña en caso de olvido, pa
 
 Criterios de aceptación:
 
-El formulario de recuperación solicita el correo electrónico del usuario.
+- El formulario de recuperación solicita el correo electrónico del usuario.
 
-Se valida que el correo exista en la base de datos.
+- Se valida que el correo exista en la base de datos.
 
-El sistema envía un enlace seguro de restablecimiento al correo registrado.
+- El sistema envía un enlace seguro de restablecimiento al correo registrado.
 
-El usuario puede definir una nueva contraseña cumpliendo las políticas de seguridad (mínimo 8 caracteres, letras y números).
+- El usuario puede definir una nueva contraseña cumpliendo las políticas de seguridad (mínimo 8 caracteres, letras y números).
 
-Mensaje de confirmación al finalizar el proceso.
+- Mensaje de confirmación al finalizar el proceso.
 
 ---
 
@@ -161,13 +161,13 @@ Como ciudadano, quiero calificar las zonas o rutas que frecuento como seguras o 
 
 Criterios de aceptación:
 
-El sistema permite seleccionar una zona o ruta en el mapa.
+- El sistema permite seleccionar una zona o ruta en el mapa.
 
-Se ofrece opción de calificación rápida (ej. 👍 Seguro / 👎 Inseguro).
+- Se ofrece opción de calificación rápida (ej. 👍 Seguro / 👎 Inseguro).
 
-La calificación queda registrada con fecha y usuario.
+- La calificación queda registrada con fecha y usuario.
 
-El promedio de calificaciones se refleja en el mapa general de la aplicación.
+- El promedio de calificaciones se refleja en el mapa general de la aplicación.
 
-Evitar duplicados por parte del mismo usuario en la misma ruta (una calificación por persona).
+- Evitar duplicados por parte del mismo usuario en la misma ruta (una calificación por persona).
 
