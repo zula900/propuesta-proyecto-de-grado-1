@@ -1,173 +1,82 @@
-# 📌 Propuesta Proyecto de Grado – App de Alertas de Transporte Público
+# Validación y Verificación del Proyecto SafeTransit
 
-## 👤 Autor
-- **Nombre:** Mateo hernandez diaz   
-- **Carrera:** Tecnología en Desarrollo de Software  
-- **Universidad:** Universidad Católica Luis Amigó  
+##  Objetivo General
 
----
-
-## 🏷️ Nombre del proyecto
-**SafeTransit – Alertas de Transporte Público en Tiempo Real**
+Garantizar que la aplicación **SafeTransit** cumpla con los requerimientos funcionales y no funcionales, asegurando la confiabilidad, usabilidad y precisión del sistema antes, durante y después de su desarrollo.
 
 ---
 
-## 🧩 Descripción del Problema
-En muchas ciudades, los usuarios del transporte público no saben **cuándo pasará el bus**, si **ya pasó**, o si **viene lleno**.  
-Esto genera **pérdida de tiempo**, **incertidumbre** y malas decisiones de ruta.
+## 1. Validación
+
+La validación se enfoca en comprobar que el sistema cumple con las necesidades reales del usuario final y que la solución propuesta resuelve efectivamente el problema identificado.
+
+### 1.1 Métodos de Validación
+
+| Método | Descripción | Responsable |
+|--------|--------------|-------------|
+| Entrevistas a usuarios | Reuniones con ciudadanos y conductores para validar si las funciones (mapa, alertas, denuncias) satisfacen sus necesidades de información y seguridad. | Equipo de análisis |
+| Encuestas digitales | Formularios en línea para conocer la percepción sobre los problemas de transporte (incertidumbre, retrasos, inseguridad). | Investigador principal |
+| Prototipado temprano (mockups) | Presentación de interfaces simuladas de la app a usuarios para obtener retroalimentación sobre usabilidad y diseño. | Equipo UX/UI |
+| Revisión de requerimientos | Validación conjunta entre desarrolladores, usuarios y autoridades para confirmar que los requerimientos son completos y coherentes. | Líder técnico |
+
+### 1.2 Resultados Esperados
+
+- Los usuarios confirman que la app resuelve un problema real.  
+- Se identifican posibles mejoras antes del desarrollo (alertas más específicas, diseño de mapas, tipos de incidentes, etc.).  
+- Los requerimientos funcionales quedan aprobados y validados antes de programar.
 
 ---
 
-## 💡 Solución Propuesta
-Desarrollar una **aplicación web/móvil** que muestre información confiable del transporte **sin depender de reportes del usuario**:
+## 2. Verificación
 
-- 🚍 **Posición de buses en tiempo real** usando datos de GPS de empresas/autoridades (cuando exista API o datos abiertos).  
-- ⏱️ **Tiempo estimado de llegada (ETA)** a cada parada mediante cálculo de distancia y velocidad histórica.  
-- ⭐ **Reportes opcionales de ocupación** (vacío/medio/lleno). La app funciona igual sin ellos.  
-- 🔔 **Alertas** si un bus presenta retrasos inusuales o desvíos.  
-- 📍 **Paradas favoritas** y notificaciones cuando el bus esté cerca.  
+### 2.1 Métodos de Verificación
 
-> Primera versión: **mapa + ETA**; reportes ciudadanos como plus.  
-
----
-
-## 🛠️ Tecnologías a Utilizar
-- **Frontend móvil/web:** Flutter o React Native / React  
-- **Mapas:** Google Maps Platform o Mapbox  
-- **Backend:** Node.js (Express) o Python (FastAPI/Django)  
-- **Base de datos:** PostgreSQL (PostGIS) o Firebase  
-- **Tiempo real:** WebSockets (Socket.IO) o Firebase Realtime DB  
-- **Control de Versiones:** Git & GitHub   
-
+| Método | Descripción | Etapa |
+|--------|--------------|-------|
+| Pruebas unitarias | Verificar que cada módulo (registro, denuncias, mapa, alertas) funcione correctamente por separado. | Desarrollo |
+| Pruebas de integración | Confirmar que los módulos se comuniquen adecuadamente entre frontend, backend y base de datos. | Desarrollo |
+| Pruebas funcionales | Verificar que las funciones coincidan con los casos de uso definidos. | Testing |
+| Pruebas de usabilidad | Evaluar facilidad de uso, claridad de interfaz y tiempo de respuesta del usuario. | Validación final |
+| Pruebas de rendimiento | Medir velocidad de carga, tiempo de respuesta de alertas en tiempo real y estabilidad bajo carga. | Etapa final |
 
 ---
 
-## 🔒 Privacidad y Fuentes de Datos
-- Priorizar **datos oficiales** (APIs de empresas o datos abiertos).  
-- Reportes ciudadanos **opcionales** y anónimos.  
-- Cumplir Términos de Uso de mapas/APIs.
+## 3. Casos de Uso para Validación y Verificación
+
+| # | Caso de Uso | Validación Previa | Verificación Durante el Desarrollo |
+|---|--------------|-------------------|------------------------------------|
+| 1 | Registro de denuncias | Se consulta si los usuarios realmente desean incluir foto/video y cómo prefieren describir los hechos. | Validar que el formulario no permita enviar datos vacíos y que los archivos se guarden correctamente. |
+| 2 | Consulta de denuncias propias | Verificar si los ciudadanos desean filtros por fecha o estado. | Comprobar que solo se muestren denuncias del usuario autenticado. |
+| 3 | Mapa de incidentes | Confirmar que los usuarios prefieren visualizar zonas peligrosas en mapas interactivos. | Asegurar que los marcadores y filtros funcionen y se actualicen en tiempo real. |
+| 4 | Notificaciones de zonas de riesgo | Validar si los usuarios quieren alertas por correo o dentro de la app. | Probar que las notificaciones lleguen correctamente según las zonas configuradas. |
+| 5 | Panel de administración | Confirmar con autoridades qué datos desean ver (tipos de incidentes, estados, zonas). | Verificar roles de usuario, permisos y actualización de estado en tiempo real. |
+| 6 | Recuperación de contraseña | Revisar si los usuarios prefieren correo o SMS como método de recuperación. | Verificar envío correcto del enlace y validación de seguridad. |
+| 7 | Calificación de zonas seguras/inseguras | Evaluar si los usuarios comprenden la escala de calificación (👍 / 👎). | Confirmar que el sistema registre solo una calificación por usuario y actualice el promedio. |
 
 ---
 
-## Diagrama de Flujo
-![Diagrama de Flujo](imagenes/bustracker_diagrama.png)
+## 4. Validación de Requerimientos No Funcionales
 
-## Diagrama de ishikawa
-![Diagrama de ishikawa](imagenes/Beige_and_Brown_Simple_Modern_Fishbone_Diagram_Graph.png)
-
----
-
-1. Registro de denuncias
-
-Como ciudadano registrado, quiero registrar una denuncia sobre una situación de inseguridad en el transporte público, para que la autoridad competente pueda tomar medidas.
-
-Criterios de aceptación:
-
-- El formulario solicita ubicación, descripción del hecho y opción para adjuntar evidencia (foto/video).
-
-- Validación de que todos los campos obligatorios estén diligenciados.
-
-- La denuncia se guarda en la base de datos con fecha y hora.
-
-- Se muestra mensaje de confirmación de registro exitoso.
+| Requerimiento | Tipo | Método de Validación | Criterio de Aceptación |
+|----------------|------|----------------------|-------------------------|
+| Seguridad | No funcional | Pruebas de autenticación, cifrado de datos. | Los datos del usuario deben viajar cifrados y almacenarse de forma segura. |
+| Disponibilidad | No funcional | Simulaciones de carga y tiempo de respuesta. | El sistema debe soportar al menos 100 conexiones simultáneas sin fallos. |
+| Usabilidad | No funcional | Pruebas A/B con usuarios reales. | El 90% de los usuarios debe poder completar tareas sin ayuda externa. |
+| Escalabilidad | No funcional | Pruebas en ambientes simulados de alta demanda. | El sistema debe permitir agregar más buses o zonas sin afectar rendimiento. |
 
 ---
 
-2. Consulta de denuncias propias
+## 5. Estrategia de Pruebas Futuras
 
-Como ciudadano registrado, quiero consultar el historial de mis denuncias, para poder dar seguimiento a su estado.
-
-Criterios de aceptación:
-
-- El sistema muestra una lista de denuncias asociadas al usuario.
-
-- Cada denuncia debe mostrar fecha, descripción y estado (pendiente, en revisión, resuelta).
-
-- Debe existir opción de filtrar denuncias por estado o fecha.
-
-- Acceso restringido solo al usuario propietario de la cuenta.
+- Testing automatizado con herramientas como **Jest (JavaScript)** o **PyTest (Python)**.  
+- Pruebas de API con **Postman** o **Swagger**.  
+- Pruebas de mapas y geolocalización simulando ubicaciones falsas para validar alertas.  
+- Testing de UI con **Cypress** o **Selenium**.  
+- Pruebas piloto en una ciudad específica antes del despliegue nacional.
 
 ---
 
-3. Visualización de mapa de incidentes
+## 6. Conclusión
 
-Como ciudadano, quiero visualizar en un mapa las zonas con más reportes de inseguridad, para evitar rutas peligrosas.
-
-Criterios de aceptación:
-
-- El mapa muestra marcadores en las ubicaciones reportadas.
-
-- Los marcadores se agrupan por zonas con alta concentración de incidentes.
-
-- Opción de filtrar por tipo de incidente o fecha.
-
-- El mapa se actualiza automáticamente con las nuevas denuncias.
-
----
-
-4. Notificaciones sobre zonas de riesgo
-
-Como ciudadano, quiero recibir notificaciones sobre nuevas denuncias en mi zona habitual, para estar alerta en mis recorridos.
-
-Criterios de aceptación:
-
-- El sistema permite al usuario registrar zonas de interés (ej. barrio, estación).
-
-- Notificación automática cuando se registre una denuncia en la zona configurada.
-
-- Notificación enviada por correo electrónico o dentro de la app.
-
-- Opción para activar o desactivar notificaciones.
-
----
-
-5. Panel de administración (autoridad)
-
-Como administrador, quiero acceder a un panel donde pueda visualizar todas las denuncias recibidas, para gestionar y darles respuesta.
-
-Criterios de aceptación:
-
-- El panel muestra lista de denuncias con opción de filtrado (fecha, zona, tipo de incidente).
-
-- Cada denuncia debe tener opciones de actualizar su estado (pendiente, en revisión, resuelta).
-
-- Acceso restringido a usuarios con rol de administrador.
-
-- Los cambios en el estado de la denuncia se reflejan en el perfil del ciudadano denunciante.
-
----
-
-6. Recuperación de contraseña
-
-Como ciudadano registrado, quiero recuperar mi contraseña en caso de olvido, para poder acceder nuevamente a la plataforma.
-
-Criterios de aceptación:
-
-- El formulario de recuperación solicita el correo electrónico del usuario.
-
-- Se valida que el correo exista en la base de datos.
-
-- El sistema envía un enlace seguro de restablecimiento al correo registrado.
-
-- El usuario puede definir una nueva contraseña cumpliendo las políticas de seguridad (mínimo 8 caracteres, letras y números).
-
-- Mensaje de confirmación al finalizar el proceso.
-
----
-
-7. Calificación de zonas seguras/inseguras
-
-Como ciudadano, quiero calificar las zonas o rutas que frecuento como seguras o inseguras, para contribuir a la base de datos de la comunidad.
-
-Criterios de aceptación:
-
-- El sistema permite seleccionar una zona o ruta en el mapa.
-
-- Se ofrece opción de calificación rápida (ej. 👍 Seguro / 👎 Inseguro).
-
-- La calificación queda registrada con fecha y usuario.
-
-- El promedio de calificaciones se refleja en el mapa general de la aplicación.
-
-- Evitar duplicados por parte del mismo usuario en la misma ruta (una calificación por persona).
-
+La validación y verificación permitirán asegurar la **calidad, utilidad y confiabilidad** de la aplicación **SafeTransit** antes de su construcción definitiva.  
+De esta forma, se garantiza que el desarrollo se base en requerimientos bien definidos, evitando reprocesos y asegurando que la aplicación aporte valor real a la comunidad.
