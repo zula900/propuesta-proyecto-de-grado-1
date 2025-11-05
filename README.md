@@ -52,6 +52,10 @@ Desarrollar una **aplicación web/móvil** que muestre información confiable de
 ## Diagrama de Flujo
 ![Diagrama de Flujo](imagenes/bustracker_diagrama.png)
 
+## Diagrama de ishikawa
+![Diagrama de ishikawa](imagenes/Beige_and_Brown_Simple_Modern_Fishbone_Diagram_Graph.png)
+
+
 ---
 
 # Historias de usuario
